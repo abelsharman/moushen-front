@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Moushen Group</title>
 </head>
 <body>
+	<section class="container" id='app'>
+		<div class="left_block" onclick="scrol()">
+			<img src="static/logo1.svg" alt="logo" class="img_logo">
+
+			<div class="adaptive_menu" >
+					<p onclick="op()"><span style='color: white;'>&#8801</span> Меню</p>
+			</div>
+
+			<div class="menu_tab" id='menu'>
+				<a href="#"  class="menu_tab_element adaptive_close" onclick="cl()">Закрыть</a>
+				<a href="#" class="menu_tab_element" style="color: white;background-color:rgba(0,25,45,0.8) ;">Главная</a>
+				<a href="#" class="menu_tab_element" onclick="drop()">Цены за услуги &#10132;</a>
+				<div class="dropdown-container" id="dropdown">
+ 			 	  <a href="#">Создание сайтов</a>
+ 			 	  <a href="#">Продвижение сайтов</a>
+ 			 	  <a href="#">Коучинг</a>
+ 			 	  <a href="#">Соц. сети</a>
+ 			 	  <a href="#">Доп услуги</a>
+ 			 	</div>
+				<a href="#" class="menu_tab_element">Портфолио</a>
+				<a href="#" class="menu_tab_element">Отзывы</a>
+				<a href="#" class="menu_tab_element">Обо мне</a>
+				<a href="#" class="menu_tab_element">Вопросы</a>
+				<a href="#" class="menu_tab_element">Акции</a>
+			</div>
+
+			<div class="contact_block">
+				<div class="contact_block_inner">
+					<span><img src="static/call.png" alt="call"><a href="tel:+7 (967) 850-83-08">+7 (967) 850-83-08</a></span>
+					<span id="adaptive_none"><img src="static/email.png" alt="call"><a href="mailto:info@moushengroup.ru">MoushG@ya.ru</a></span>
+					<span id="adaptive_zvonok"><img src="static/redcall.png" alt="call"><a href="#" style="color: red;">Заказать звонок</a></span>
+				</div>
+			</div>
+		</div>
 	
+		
+		<div class="right_block">
+			<h1 class="main">Увеличиваю прибыль предпринимателям!</h1>
+			<h2 class="typing" id="typing-effect"></h2>
+			<span class="consult">Получить БЕСПАТНУЮ консультацию <img src="static/tap.png" alt=""></span>
+
+			<div class="dost">
+				<div class="dost_item">
+					<img src="static/logo1.svg" alt="img">
+					<p>Гарантии прописаны в договоре</p>
+				</div>
+
+				<div class="dost_item">
+					<img src="static/logo1.svg" alt="img">
+					<p>Личный опыт более 7 лет</p>
+				</div>
+
+				<div class="dost_item">
+					<img src="static/logo1.svg" alt="img">
+					<p>Более 200 удачных проектов</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
 </body>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+	<script src="js/index.js"></script>
 </html>
